@@ -11,7 +11,7 @@ I wanted to implement MQTT into a project because I needed to understand how it 
 I began this project by first intalling the MOSQUITTO broker service onto the RPi, which allowed the device to act as an MQTT broker able to send and recieve data to and from different endpoints and devices. I then attempted to develop a controller tool using Python and Flask, but proved to be too time and labor intensive. I then decided to switch to using Node-RED, which had MQTT support baked in on the inital install. I decided to include the dashboard-2 library as it made creating a simple UI to control the overhead fan with much easier. To integrate MQTT into the device, I had to publish to specific "topics" I had programmed within the ESP32; one for each button on the fan remote.
 
 <p align = "center">
-  <img src = "../Photos/NRFlow.png" alt="Node-RED flow used in manual control">
+  <img src = "https://github.com/T33J4Y1104/blog/blob/8d3587276e37f0acc2a7a3574dec9fb5ec993365/Photos/NRFlow.png" alt="Node-RED flow used in manual control">
 </p>
 
 <p align = "center">
