@@ -21,11 +21,13 @@ I began this project by first intalling the MOSQUITTO broker service onto the RP
 Each button shown on the dashboard, when pressed, sends a different message to the MQTT broker running on the Pi, then the broker sends the the signal to the ESP-32 where it will be processed and determine which action to signal on the attached remote.
 
 #### Alarmclock functionality
+
 As an added piece of functionality, I added the ability to control the light at specific times of the day. By creating a second flow, with a new block that reads the time of day if the time matches what I specified, the light turns on, acting as a silent alarmclock
 
 <p align = "center">
-  <img src = "https://github.com/T33J4Y1104/blog/blob/main/Photos/NR_Dashboard.png" alt="Node-RED flow used in manual control">
+  <img src = "https://github.com/T33J4Y1104/blog/blob/main/Photos/Alarm_Flow.png" alt="Node-RED flow used in manual control">
 </p>
+
 
 ### ESP-32 program
 
@@ -45,8 +47,7 @@ The remote I used was an extra 3 speed ceiling fan remote from an old fan.
   <img src="https://github.com/T33J4Y1104/blog/blob/main/Photos/Merwry_Remote.png" alt="Remote Picture">
 </p>
 
-To power both the remote and the ESP32 board, I used an Adafruit bq25185 USB/ DC/ Solar Charger, which was able to supply sufficicent power to both boards. 
-
+To power both the remote and the ESP32 board, I used an Adafruit bq25185 USB/ DC/ Solar Charger, which was able to supply sufficicent power to both boards via USB.  
 
 <p align="center">
   <img src="https://github.com/T33J4Y1104/blog/blob/main/Photos/Solar_Charger.png" alt="Remote Picture">
@@ -55,5 +56,10 @@ To power both the remote and the ESP32 board, I used an Adafruit bq25185 USB/ DC
 
 
 ### Final Result:
+
+<p align="center">
+  <img src="https://github.com/T33J4Y1104/blog/blob/main/Photos/Final_Board.jpeg" alt="Remote Picture">
+</p>
+
 The Final Result was better than I had hoped. I am able to control my light from anywhere in the house thanks to the Node-RED Dashboard and have an automatic alarmclock which turns my light on rather than using a normal audio alarm.
 
