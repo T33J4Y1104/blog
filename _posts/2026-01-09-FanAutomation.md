@@ -3,6 +3,8 @@ title: "Overhead Fan Automation Using ESP32 and a Node-RED Dashboard via MQTT"
 author: "TJ Tiede"
 date: 2026-01-09
 ---
+<a href="https://github.com/T33J4Y1104/Light-Control-IoT-Device-and-Dashboard">Repository Link</a>
+
 I built an overhead light/fan controller IoT device using a Raspberry Pi 5, a handmade ESP-32 board, and a spare fan remote which connects a Node-RED flow through MQTT and is controlled by a Node-RED Dashboard.
 
 ### Why MQTT?
@@ -63,4 +65,6 @@ To power both the remote and the ESP32 board, I used an Adafruit bq25185 USB/ DC
 </p>
 
 The Final Result was better than I had hoped. I am able to control my light from anywhere in the house thanks to the Node-RED Dashboard and have an automatic alarmclock which turns my light on rather than using a normal audio alarm.
-<a href="https://github.com/T33J4Y1104/Light-Control-IoT-Device-and-Dashboard">Repository Link</a>
+
+
+
